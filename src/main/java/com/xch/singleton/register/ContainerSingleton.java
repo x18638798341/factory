@@ -11,6 +11,11 @@ public class ContainerSingleton {
     private ContainerSingleton() {
     }
 
+    /***
+     * 由于对容器进行加锁， 性能堪忧
+     * @param className 加载类的 类全限定名
+     * @return 加载成功， 或者 已缓存的则返回该类的实例
+     */
     public static Object getBean(String className){
         synchronized (ioc){
             if (ioc.containsKey(className)) {

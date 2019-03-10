@@ -1,7 +1,7 @@
 package com.xch.singleton.layz;
 
 /***
- * 由jvm层面实现线程单例
+ * 由jvm层面实现线程单例, 单例安全， 不能存在并发多实例的情况
  */
 public class LazyInnerClassSingleton {
 

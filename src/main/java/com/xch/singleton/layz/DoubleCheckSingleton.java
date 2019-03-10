@@ -1,7 +1,7 @@
 package com.xch.singleton.layz;
 
 /***
- * 两次检查来保证线程安全
+ * 两次检查来保证线程安全， 性能比较不错
  */
 public class DoubleCheckSingleton {
 
